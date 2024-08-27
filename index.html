@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es-co">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="./Styles/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="alura">
+        <img src="./assets/LogoAlura.png" alt="Logo de Alura">
+    </header>
+
+    <main class="contenedor">
+        <section class="encriptador">
+            <textarea class="encriptador_mensaje" placeholder="Ingrese el texto aquí"></textarea>
+            <p class="encriptador_mensaje_advertencia"> <i class="bi bi-exclamation-circle-fill"></i> Solo letras minúsculas y sin acentos</p>
+            <div class="encriptador_botones">
+                <a class="encriptador_BotonEncriptar" href="#" onclick="encriptar()">Encriptar</a>
+                <a class="encriptador_BotonDesencriptar" href="#" onclick="desencriptar()">Desencriptar</a>
+            </div>
+        </section>
+
+        <div class="encriptador_respuesta">
+            <img class="encriptador_respuesta_imagen" src="./assets/Muñeco.png" alt="Muñeco">
+            <h1 class="encriptador_respuesta_mensaje"> Ningún mensaje fue encontrado </h1>
+            <p class="encriptador_respuesta_mensaje2">Ingresa el texto que desees encriptar o desencriptar</p>
+            <a class="encriptador_Boton_copiar" href="#" onclick="copiar()" style="display: none;">Copiar</a>
+        </div>
+    </main>
+
+    <script src="app.js" defer></script>
+</body>
+
+</html>
